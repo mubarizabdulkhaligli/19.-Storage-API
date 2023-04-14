@@ -1,0 +1,225 @@
+header {
+  background-color: #262626;
+  width: 100%;
+  position: sticky !important;
+  top: 0;
+  z-index: 999;
+  img {
+    width: 6rem;
+    height: 6rem;
+  }
+  a {
+    text-decoration: none;
+    color: #ffc007;
+    font-size: 20px;
+  }
+  .navbar-links {
+    a {
+      position: relative;
+      text-decoration: none;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        width: 100%;
+        height: 2px;
+        background-color: #ffc007;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.3s ease;
+      }
+      &:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
+    }
+  }
+  .burger-menu {
+    display: none;
+  }
+  .cart-div {
+    position: relative;
+    .count-adding-product {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 15px;
+      height: 15px;
+      padding: 10px;
+      border-radius: 100%;
+      background-color: #ffc007;
+      color: #262626;
+      text-align: center;
+      font-size: 12px;
+      font-weight: bold;
+      position: absolute;
+      bottom: 19px;
+      left: 17px;
+    }
+  }
+}
+.header-mobile{
+  display: none;
+  background-color: #262626;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  overflow-x: hidden;
+  padding: 10px 50px;
+  img{
+    width: 4rem;
+    height: 4rem;
+  }
+
+}
+#products{
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .product {
+    cursor: pointer;
+    transition: 0.5s;
+    overflow: hidden;
+    &:hover img {
+      transform: scale(1.1);
+    }
+    .image-div {
+      overflow: hidden;
+      img {
+        transition: 0.6s;
+      }
+    }
+  }
+  .add-button {
+    border: #262626 1px solid;
+    transition: 0.1s;
+    &:hover {
+      background-color: #262626;
+      color: #ffc007 !important;
+      transform: scale(1.1);
+    }
+  }
+  
+}
+  .alertbox {
+    width: 20%;
+    background-color: rgba(38, 38, 38, 0.7);
+    border: 1px solid #ffc007;
+    color: #ffc007;
+    padding: 10px;
+    position: fixed;
+    z-index: 3;
+    bottom: 10px;
+    right: -50%;
+    transition: all 0.5s ease;
+    border-radius: 20px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .empty-cart{
+    img{
+      width: 100%;
+    }
+    p{
+      font-size: 20px;
+      line-height: 15px;
+    }
+    a{
+      button{
+        background-color: #ffc007;
+        color: #262626;
+        font-size: 20px;
+        border: 1px solid #262626;
+        &:hover{
+          background-color: #262626;
+          color: #ffc007;
+        }
+      }
+    }
+  }
+  #shopping-cart{
+    img{
+      width: 100%;
+      height: auto;
+      max-height: 400px;
+    }
+    .product {
+      cursor: pointer;
+      transition: 0.5s;
+      overflow: hidden;
+      &:hover img {
+        transform: scale(1.1);
+      }
+      .image-div {
+        overflow: hidden;
+        img {
+          transition: 0.6s;
+        }
+      }
+    }
+    h5{
+      font-size: 14px;
+    }
+    span{
+      font-size: 14px !important;
+    }
+    button{
+      color: white;
+    }
+    .your-cart{
+      background-color: #e5e5e5;
+      color: #262626;
+      position: sticky;
+      top: 14%;
+      z-index: 5;
+      border: #ffc007 2px solid;
+      .title-cart{
+        background-color: #ffc007;
+        padding: 10px;
+      }
+    }
+    
+  }
+  input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  header{
+    display: none;
+  }
+  .header-mobile{
+    display: block;
+    .burger-menu{
+      i{
+        cursor: pointer;
+      }
+    }
+  }
+}
+@media screen and (min-width: 991px) and (max-width: 1200px) {
+.product{
+  span, h5, p{
+    font-size: 14px !important;
+  } 
+  img{
+    height: 300px !important;
+  }
+}
+}
+@media only screen and (max-width: 768px) {
+  .alertbox{
+    width: 30%;
+    padding: 5px;
+    font-size: 8px;
+  }
+}
+

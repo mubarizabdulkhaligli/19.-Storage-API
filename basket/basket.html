@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+      integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Garment Gallery</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2 col-2">
+            <div class="logo p-2">
+              <a href="index.html">
+                <img src="/images/Ekran Resmi 2023-04-11 22.11.24.png" alt="" />
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-6 col-6 navbar-links d-flex align-items-center justify-content-start gap-5 fw-medium"
+          >
+            <a href="index.html">Home</a>
+            <a href="#">Categories</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+          </div>
+
+          <div
+            class="col-lg-3 col-3 d-flex align-items-center justify-content-end gap-3"
+          >
+            <a href="#"><i class="bi bi-search"></i></a>
+            <a href="#"><i class="bi bi-person-fill"></i></a>
+            <a href="#"><i class="bi bi-heart"></i></a>
+            <div class="cart-div">
+              <a href="basket.html"><i class="bi bi-bag-fill"></i></a>
+              <div class="count-adding-product d-none">
+                <span class="count"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="empty-cart">
+      <div class="container">
+        <div class="empty-box w-50 m-auto text-center">
+          <img src="/images/empty-cart.png" alt="">
+          <h1 class="fw-bold">Your cart is empty</h1>
+          <p>You have no items in your shopping cart</p>
+          <p>Let's go buy something</p>
+          <a href="index.html"><button class="btn w-50">Shop Now</button></a>
+        </div>
+      </div>
+    </div>
+
+<section id="shopping-cart" class="mt-5">
+  <div class="container">
+    <div class="d-none your-cart w-100  d-flex align-items-center justify-content-between rounded-3 pe-2">
+      <div class="title-cart fw-bold"><h4>Your shopping cart</h4></div>
+    <h5>Product count: <span class="product-count"></span></h5>
+    <h5 >Total price: <span class="total-price"></span> </h5>
+    <button class="btn btn-success text-light">Order</button>
+    <button class="btn btn-danger text-light remove-all">Remove all</button>
+  </div>
+    <div class="row shopping-list py-4 g-3">
+    </div>
+  </div>
+</section>
+
+    <script src="/js/basket.js"></script>
+    <script src="/js/app.js"></script>
+  </body>
+</html>

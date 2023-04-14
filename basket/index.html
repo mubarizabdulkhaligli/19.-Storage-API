@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+      integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Garment Gallery</title>
+  </head>
+  <body>
+
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2 col-2">
+            <div class="logo p-2">
+              <a href="index.html">
+                <img src="/images/Ekran Resmi 2023-04-11 22.11.24.png" alt="" />
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-6 col-6 navbar-links d-flex align-items-center justify-content-start gap-5 fw-medium"
+          >
+            <a href="index.html">Home</a>
+            <a href="#">Categories</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+          </div>
+
+          <div
+            class="col-lg-3 col-3 d-flex align-items-center justify-content-end gap-3"
+          >
+            <a href="#"><i class="bi bi-search"></i></a>
+            <a href="#"><i class="bi bi-person-fill"></i></a>
+            <a href="#"><i class="bi bi-heart"></i></a>
+            <div class="cart-div">
+              <a href="basket.html"><i class="bi bi-bag-fill"></i></a>
+              <div class="count-adding-product d-none">
+                <span class="count"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="header-mobile">
+      <div class="row">
+        <div class="col-md-6 col-sm-6 col-6 logo-mobile">
+          <a href="index.html">
+            <img src="/images/Ekran Resmi 2023-04-11 22.11.24.png" alt=""/>
+          </a>
+        </div>
+        <div class="col-md-6 col-sm-6 col-6 burger-menu d-flex justify-content-end align-items-center">
+          <i onclick="toggleMenu()" class="fa-solid fa-bars fa-2xl" style="color: #ffc007;"></i>
+          <div class="slided-menu"></div>
+        </div>
+      </div>
+    </div>
+
+    <section id="products">
+      <div class="container">
+        <div class="row py-4 g-3">
+          <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+
+            <div id="card1" class="card product">
+
+              <div class="image-div">
+                <img
+                  class="card-img-top"
+                  src="https://d5e14a.cdn.akinoncloud.com/products/2022/11/30/14830/35ffd1af-388b-4231-8400-4f913678416d_size330x495.jpg"
+                  alt="Card image cap"
+                />
+              </div>
+
+              <div class="card-body">
+
+                  <div class="d-flex align-items-center justify-content-between">
+                    <h5 class="card-title fw-bold">Emporio Armani</h5>
+                    <span class="price fst-italic fs-5">399 $</span>
+                  </div>
+
+                  <p class="card-text">The Italian brand</p>
+
+                  <div class="d-flex align-items-center justify-content-between">
+                      <a
+                        href="#"
+                        class="btn btn-warning text-dark fw-bold add-button"
+                         >Add to cart</a
+                      >
+                      <i
+                         id="heart1"
+                          class="fa-regular fa-heart fa-2xl fav-heart"
+                           style="color: #ffc007"
+                       ></i>
+                  </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+            <div id="card2" class="card product">
+              <div class="image-div">
+                <img
+                  class="card-img-top"
+                  src="https://d5e14a.cdn.akinoncloud.com/products/2022/11/30/636517/13d8ecc2-7325-4bd7-b266-46b0badd8815_size330x495.jpg"
+                  alt="Card image cap"
+                />
+              </div>
+              <div class="card-body">
+                <div class="d-flex align-items-center justify-content-between">
+                  <h5 class="card-title fw-bold">Hugo Boss</h5>
+                  <span class="price fst-italic fs-5">449 $</span>
+                </div>
+                <p class="card-text">Suit of the future</p>
+                <div class="d-flex align-items-center justify-content-between">
+                  <a
+                    href="#"
+                    class="btn btn-warning text-dark fw-bold add-button"
+                    >Add to cart</a
+                  >
+                  <i
+                    id="heart2"
+                    class="fa-regular fa-heart fa-2xl fav-heart"
+                    style="color: #ffc007"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+            <div id="card3" class="card product">
+              <div class="image-div">
+                <img
+                  class="card-img-top"
+                  src="https://d5e14a.cdn.akinoncloud.com/products/2022/11/14/884203/15037e7b-5c74-491e-b3cd-64f1833aa0ca_size330x495.jpg"
+                  alt="Card image cap"
+                />
+              </div>
+              <div class="card-body">
+                <div class="d-flex align-items-center justify-content-between">
+                  <h5 class="card-title fw-bold">Brioni</h5>
+                  <span class="price fst-italic fs-5">349 $</span>
+                </div>
+                <p class="card-text">These suits are luxuries</p>
+                <div class="d-flex align-items-center justify-content-between">
+                  <a
+                    href="#"
+                    class="btn btn-warning text-dark fw-bold add-button"
+                    >Add to cart</a
+                  >
+                  <i
+                    id="heart3"
+                    class="fa-regular fa-heart fa-2xl fav-heart"
+                    style="color: #ffc007"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+            <div id="card4" class="card product">
+              <div class="image-div">
+                <img
+                  class="card-img-top"
+                  src="https://d5e14a.cdn.akinoncloud.com/products/2022/11/14/884190/87d35fc1-9a65-4a1c-af8b-1ad0d0c825b3_size330x495.jpg"
+                  alt="Card image cap"
+                />
+              </div>
+              <div class="card-body">
+                <div class="d-flex align-items-center justify-content-between">
+                  <h5 class="card-title fw-bold">Suitsupply</h5>
+                  <span class="price fst-italic fs-5">289 $</span>
+                </div>
+                <p class="card-text">The Dutch men's suit</p>
+                <div class="d-flex align-items-center justify-content-between">
+                  <a
+                    href="#"
+                    class="btn btn-warning text-dark fw-bold add-button"
+                    >Add to cart</a
+                  >
+                  <i
+                    id="heart4"
+                    class="fa-regular fa-heart fa-2xl fav-heart"
+                    style="color: #ffc007"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+            <div id="card5" class="card product">
+              <div class="image-div">
+                <img
+                  class="card-img-top"
+                  src="https://d5e14a.cdn.akinoncloud.com/products/2022/06/10/409541/1d5fcb16-9d09-4efb-98ef-c036e44e2537_size330x495.jpg"
+                  alt="Card image cap"
+                />
+              </div>
+              <div class="card-body">
+                <div class="d-flex align-items-center justify-content-between">
+                  <h5 class="card-title fw-bold">Tom Ford</h5>
+                  <span class="price fst-italic fs-5">799 $</span>
+                </div>
+                <p class="card-text">Elegance and love of luxury</p>
+                <div class="d-flex align-items-center justify-content-between">
+                  <a
+                    href="#"
+                    class="btn btn-warning text-dark fw-bold add-button"
+                    >Add to cart</a
+                  >
+                  <i
+                    id="heart5"
+                    class="fa-regular fa-heart fa-2xl fav-heart"
+                    style="color: #ffc007"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+            <div id="card6" class="card product">
+              <div class="image-div">
+                <img
+                  class="card-img-top"
+                  src="https://d5e14a.cdn.akinoncloud.com/products/2020/09/24/642/fd3f8412-f7d8-4a2e-9813-f24f81791002_size330x495.jpg"
+                  alt="Card image cap"
+                />
+              </div>
+
+              <div class="card-body">
+                <div class="d-flex align-items-center justify-content-between">
+                  <h5 class="card-title fw-bold">REISS</h5>
+                  <span class="price fst-italic fs-5">529 $</span>
+                </div>
+                <p class="card-text">For more comfort</p>
+                <div class="d-flex align-items-center justify-content-between">
+                  <a
+                    href="#"
+                    class="btn btn-warning text-dark fw-bold add-button"
+                    >Add to cart</a
+                  >
+                  <i
+                    id="heart6"
+                    class="fa-regular fa-heart fa-2xl fav-heart"
+                    style="color: #ffc007"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+            <div id="card7" class="card product">
+              <div class="image-div">
+                <img
+                  class="card-img-top"
+                  src="https://d5e14a.cdn.akinoncloud.com/products/2020/10/01/103656/59f47b66-b03e-40e7-a3ae-6f8aa8741999_size330x495.jpg"
+                  alt="Card image cap"
+                />
+              </div>
+              <div class="card-body">
+                <div class="d-flex align-items-center justify-content-between">
+                  <h5 class="card-title fw-bold">Burberry</h5>
+                  <span class="price fst-italic fs-5">449 $</span>
+                </div>
+                <p class="card-text">Elegance</p>
+                <div class="d-flex align-items-center justify-content-between">
+                  <a
+                    href="#"
+                    class="btn btn-warning text-dark fw-bold add-button"
+                    >Add to cart</a
+                  >
+                  <i
+                    id="heart7"
+                    class="fa-regular fa-heart fa-2xl fav-heart"
+                    style="color: #ffc007"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        
+          <div class="col-lg-3 col-md-6 col-sm-12 col-12 ">
+            <div id="card8" class="card product">
+              <div class="image-div">
+                <img
+                  class="card-img-top"
+                  src="https://d5e14a.cdn.akinoncloud.com/products/2021/11/30/558391/a8106ae5-1bcd-4952-b547-2b946d9e09c4_size330x495.jpg"
+                  alt="Card image cap"
+                />
+              </div>
+              <div class="card-body">
+                <div class="d-flex align-items-center justify-content-between">
+                  <h5 class="card-title fw-bold">Yves Saint Laurent</h5>
+                  <span class="price fst-italic fs-5">599 $</span>
+                </div>
+                <p class="card-text">If you love fashion</p>
+                <div class="d-flex align-items-center justify-content-between">
+                  <a
+                    href="#"
+                    class="btn btn-warning text-dark fw-bold add-button"
+                    >Add to cart</a
+                  >
+                  <i
+                    id="heart8"
+                    class="fa-regular fa-heart fa-2xl fav-heart"
+                    style="color: #ffc007"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<div class="alertbox">
+  <span></span>
+</div>
+    <script src="/js/app.js"></script>
+  </body>
+</html>
